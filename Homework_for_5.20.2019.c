@@ -6,16 +6,11 @@ void print(int *p, int size)
         printf("%d\n", p[i]);
     }
 }
-void reverse(int *p, int size)
+void reverse(int *p, int z)
 {
     int b = 0;
-    int z = size;
-    while (1)
+    while (b < z)
     {
-        if (b >= z)
-        {
-            return;
-        }
         int a = p[b];
         p[b] = p[z];
         p[z] = a;
